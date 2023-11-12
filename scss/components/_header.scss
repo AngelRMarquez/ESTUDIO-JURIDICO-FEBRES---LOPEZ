@@ -1,0 +1,41 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navegacion {
+    background-color: nth($colores, 5 );
+    padding: 5px;
+    width: 100%;
+    margin:auto ;
+    border-radius: 3px;
+    align-items: center;
+    div{
+        img{
+            width: 120px;
+            margin-right: 300px;
+            border-radius: 6px;
+        }
+    }
+    div{
+        ul{
+            li{
+                a{
+                    
+                    text-decoration: none;
+                    color: #252525;
+                    font-weight: 200px;
+                    font-size: 20px;
+                    padding: 10px;
+                    margin-right: 10px;
+                        &:hover{
+                            background-color:nth($colores , 6); 
+                            border-radius: 10px;
+                          }
+                        }
+                }
+            }
+        }
+    }
+

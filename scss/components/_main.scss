@@ -1,0 +1,219 @@
+/*----------index-----------------*/
+
+body{
+    background-color:nth($colores, 1);
+    font-family:'Kanit', sans-serif;
+        main{
+            .hero{
+                text-align: center;
+                width: 100%;
+                height: $altura;  
+                background-image: url("../img/fondo-principal.png");
+                @extend %background;
+                .hero {
+                    @include flex (flex,center , center);
+                }
+                
+                .titulo-principal{
+                    position: absolute;
+                    background-color: rgba(0, 0, 0, .4);
+                    width:100%;
+                    height: $altura;
+                    padding: 10px;
+                    h1{
+                        padding: 40px;
+                        text-transform: $mayuscula;
+                        font-size: $tamano-fuente-titulo;
+                        color: blanchedalmond;
+                    }
+                    p{
+                        padding: 40px;
+                        color:#fff; 
+                    }
+                }
+            }
+            .container1{
+                @include flex--container(flex,space-around,center,wrap);
+                h2{
+                    background-color: nth($colores,3);
+                    padding: 20px ;
+                    text-align: center;
+                    text-transform: $mayuscula;
+                    width: 100%;
+                    
+                }
+                .container-areas{
+                    @include flex--container(flex,space-around,center,wrap);
+                    div{
+                        margin: $margen-promedio - 5;
+                        height: $altura + 100;
+                        width: 300px;
+                        border-radius: 2%;
+                        background-color:nth($colores, 2);
+                        text-align: center;
+                        }
+                        h3{
+                            margin: $margen-promedio;
+                            text-align: center;
+                            text-transform: capitalize;
+                        }
+                        img{
+                            width: 250px;
+                            height: 350px;
+                            margin-bottom: 35px;
+                        }
+                        .boton{
+                            @extend %boton;
+                        }
+                    }
+                }
+            .sect-p{
+                background-image: url(../img/contacto.jpg);
+                text-align: center;
+                width: 100%;
+                height: $altura;
+                @extend %background;
+            
+                div{
+                    color:#fff; 
+                    background-color: rgba(0, 0, 0, .4);
+                    position: absolute;
+                    width: 100%;
+                    height: $altura;
+                    h2{
+                        margin: $margen-promedio + 20;
+                        text-transform: uppercase;
+                    }
+                    p{
+                        margin-bottom: 50px;
+                    }
+                    a{
+                      @extend %boton;
+                    }
+                }
+            } 
+          
+            .contenedor{
+                display: flex;
+                
+                h2{
+                    font-size: 20px;
+                    margin: $margen-promedio;
+                    text-transform: $mayuscula;
+                    background-color:nth($colores, 3);
+                    padding: 25px;
+                    border-radius: 9px;
+                   text-align: center;
+              
+                }
+                .text-contenedor{
+                    flex: 1;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    text-align: center;
+                   
+                }
+                
+                .iframe-contenedor{
+                    flex: 1;
+                    padding: 20px;
+                    box-sizing: border-box;
+                    iframe{
+                        width: 100%;
+                        height: 300px;
+                    }
+                }
+               
+            }
+        }
+    }
+
+/* pagina de quienes somos*/
+    .quienes-somos{
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            height: 100vh;
+            background-image: url("../img/michael-pointner-kOdl-epUGUE-unsplash.jpg");
+            @extend %background;
+            .quienes-somos-fd{
+                position:absolute;
+                background-color: rgba(0, 0, 0, .5);
+                width: 100%;
+                height: 100%;
+                h2{
+                    text-transform: uppercase;
+                    color: #fff;
+                    margin: $margen-promedio + 20;
+                }
+                p{
+                    margin: $margen-promedio + 10;
+                    text-align: center;
+                };
+            }
+        }    
+
+/*pagina de areas de practica*/
+
+.areas{
+   @include flex(flex,center,center);
+   flex-direction: column;
+    
+    h2{
+        background-color: nth($colores, 3 );
+        padding: 20px ;
+        text-align: center;
+        text-transform: $mayuscula;
+        width: 100%;
+        margin: $margen-promedio + 10 ;
+    }
+    div{
+        flex-direction: column;
+        margin: $margen-promedio + 30;
+        height: $altura;
+        width: 90%;
+        align-items: center;
+        border-radius: 10%;
+        background-color:nth($colores, 2);
+        h3{
+            text-align: center;
+            padding-bottom: 30px;
+            margin: 10px 20px;
+            text-transform: uppercase;
+        }
+        img{
+            height: 280px;
+            width: 400px;
+            margin: 0px 50px 50px 50px;
+            border-radius: 15%;
+            float: left;
+        }
+        p{
+            margin: 0 50px;
+            text-align: center;
+        }
+    }
+}
+
+
+/* pagina contacto*/
+  form{
+      background-color: nth($colores, 4);
+      min-width:(500px, 80%);
+      margin: 0 auto;
+      padding: 12px;
+      border-radius: 16px;
+      text-transform: capitalize;
+    fieldset{
+        border: none;
+        div{
+            font-weight: bold;
+            margin-bottom: 10px;
+            display: block;
+            text-align: center;
+            .boton{
+                @extend %boton;
+            }
+        }
+    }
+  }

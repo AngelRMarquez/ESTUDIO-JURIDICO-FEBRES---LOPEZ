@@ -1,0 +1,71 @@
+/*variables*/
+$altura:400px;
+$mayuscula:uppercase;
+$tamano-fuente-titulo:60px;
+$margen-promedio:20px;
+/*lista*/
+$colores:
+ bisque,
+ #ffd09b,
+ rgb(201, 177, 97),    
+ rgb(189, 180, 168),
+ rgb(194, 177, 155),
+ rgb(182, 156, 121),
+ #88764f;
+
+/*mixins*/
+@mixin flex ($flex, $align, $justifty){
+    display: $flex;
+    align-items: $align;
+    justify-content: $justifty;
+}
+@mixin foo-flex($flex, $flex-direction, $justify, $align){
+    display: $flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin flex--container($flex, $justify-c, $aling-i, $flex-rawp){
+    display: $flex;
+    justify-content: $justify-c;
+    align-items: $aling-i;
+    flex-wrap: $flex-rawp;
+}
+
+/*extends*/
+%background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
+
+%cont-iconos{
+    text-align: center;
+    color: #8a58ca;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+%boton{
+    background-color: #0c4b3d;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    top: 65%;
+}
+
+ %abog{
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    text-transform: capitalize;
+    background-color: #ffd09b;
+    border-radius: 3%;
+ }
