@@ -25,10 +25,20 @@ body{
                         text-transform: $mayuscula;
                         font-size: $tamano-fuente-titulo;
                         color: blanchedalmond;
+                        transform: translateY(100%);
+                        opacity: 0;
+                        animation: slideIn 2s forwards;
                     }
-                    p{
+                    @keyframes slideIn {
+                        to {
+                            transform: translateY(0);
+                            opacity: 1;
+                        }
+                    }
+                    
+                    h2{
                         padding: 40px;
-                        color:#fff; 
+                        color:blanchedalmond; 
                     }
                 }
             }
@@ -40,6 +50,10 @@ body{
                     text-align: center;
                     text-transform: $mayuscula;
                     width: 100%;
+                    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.33);
+                    -webkit-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.33);
+                    -moz-box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.33);
+                    
                     
                 }
                 .container-areas{
@@ -83,9 +97,10 @@ body{
                     h2{
                         margin: $margen-promedio + 20;
                         text-transform: uppercase;
+                     
                     }
-                    p{
-                        margin-bottom: 50px;
+                    h4{
+                        margin: auto 30px 50px 30px;
                     }
                     a{
                       @extend %boton;
@@ -95,16 +110,19 @@ body{
           
             .contenedor{
                 display: flex;
+
                 
                 h2{
-                    font-size: 20px;
+                    font-size: 21px;
                     margin: $margen-promedio;
                     text-transform: $mayuscula;
                     background-color:nth($colores, 3);
-                    padding: 25px;
+                    padding: 27px;
                     border-radius: 9px;
                    text-align: center;
-              
+                   box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
+                   -webkit-box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
+                   -moz-box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
                 }
                 .text-contenedor{
                     flex: 1;
@@ -134,8 +152,9 @@ body{
             text-align: center;
             width: 100%;
             height: 100vh;
-            background-image: url("../img/michael-pointner-kOdl-epUGUE-unsplash.jpg");
+            background-image: url("../img/quienes-somos.jpg");
             @extend %background;
+            overflow: hidden;
             .quienes-somos-fd{
                 position:absolute;
                 background-color: rgba(0, 0, 0, .5);
@@ -147,7 +166,7 @@ body{
                     margin: $margen-promedio + 20;
                 }
                 p{
-                    margin: $margen-promedio + 10;
+                    margin: auto 40px;
                     text-align: center;
                 };
             }
@@ -166,19 +185,21 @@ body{
         text-transform: $mayuscula;
         width: 100%;
         margin: $margen-promedio + 10 ;
+        box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
+        -webkit-box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
+        -moz-box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
     }
     div{
-        flex-direction: column;
-        margin: $margen-promedio + 30;
-        height: $altura;
+
+        margin: $margen-promedio + 30 auto;
+        height: auto;
         width: 90%;
-        align-items: center;
         border-radius: 10%;
-        background-color:nth($colores, 2);
+        background-color:nth($colores, 2); 
         h3{
             text-align: center;
             padding-bottom: 30px;
-            margin: 10px 20px;
+            margin: 25px 20px;
             text-transform: uppercase;
         }
         img{
@@ -189,7 +210,7 @@ body{
             float: left;
         }
         p{
-            margin: 0 50px;
+            margin: 25px 50px;
             text-align: center;
         }
     }
@@ -201,9 +222,10 @@ body{
       background-color: nth($colores, 4);
       min-width:(500px, 80%);
       margin: 0 auto;
-      padding: 12px;
+      padding: 18px 100px;
       border-radius: 16px;
       text-transform: capitalize;
+      
     fieldset{
         border: none;
         div{

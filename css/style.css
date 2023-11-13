@@ -265,7 +265,7 @@
       text-align: center;
       width: 100%;
       height: 100vh;
-      background-image: url("../img/michael-pointner-kOdl-epUGUE-unsplash.jpg");
+      background-image: url("../img/quienes-somos.jpg");
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -324,7 +324,19 @@
     margin: 50px auto;
     
 }
-
+.contact-box{
+    text-align: center;
+    width: 100%;
+     height: 400px;  
+    background-image: url("../img/pag-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .contenedor-acor{
     display: flex;
     flex-direction: column;

@@ -143,19 +143,13 @@
         }
 
     }
-    .areas{
-        div{
-            height: 500px;
-            width: auto;
-        }
-    }
 }
 
 @media screen and (max-width:670px){
    .hero{
         .titulo-principal{
-            p{
-                display: none;
+            h2{
+             display: none;
             }
         }
    }
@@ -178,12 +172,7 @@
             justify-content: center;
         }
    }
-   .areas{
-    div{
-        height: 670px;
-        width: auto;
-        }
-    }
+
     .nuestro-eq {  
       
         .nuestro-eq2{
@@ -218,6 +207,9 @@
                 }
            }
         }
+    }
+    .quienes-somos{
+        height: 1300px;
     }
 }
 @media screen and (max-width:580px){
@@ -361,13 +353,13 @@
         }
     }
     .areas{
-            div{
-                img{
-                    height: 200px;
-                    width: 300px;
-                    margin: 0px 50px 50px 50px;
-                    border-radius: 15%;
-                    float: left; 
+         div{
+            img{
+                height: 200px;
+                width: 300px;
+                margin: 0px 50px 50px 50px;
+                border-radius: 15%;
+                float: left; 
                 }
             }
         }
@@ -415,8 +407,6 @@
     }
     .areas{
         div{
-            height: 700px;
-            width: auto;
             img{
                 height: 180px;
                 width: 235px;
@@ -479,7 +469,7 @@
         }
     }
     .areas{
-        div{
+        div{ 
             img{
             height: 200px;
             width: 215px;
