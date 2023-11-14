@@ -299,10 +299,10 @@ body {
       width: 100%;
       height: 400px; }
       body main .sect-p div h2 {
-        margin: 40px;
+        margin: 20px;
         text-transform: uppercase; }
       body main .sect-p div h4 {
-        margin: auto 30px 50px 30px; }
+        margin: 29px 10px; }
   body main .contenedor {
     display: flex; }
     body main .contenedor h2 {
@@ -566,13 +566,17 @@ footer {
     gap: 60px; } }
 
 @media screen and (max-width: 530px) {
+  .sect-p div h2 {
+    margin: 10px; }
+  .sect-p div h4 {
+    margin: 10px; }
   .container-grid {
     width: 100%;
-    margin: 10px auto;
+    margin: 20px auto;
     grid-template-columns: 100%;
     grid-template-rows: repeat(7, 140px);
     grid-template-areas: "titulo" "icon1"  "icon2" "icon3"  "icon4" "icon5"  "icon6";
-    gap: 130px;
+    gap: 120px;
     background-image: url("../img/grid.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -673,8 +677,6 @@ footer {
     font-size: 50px; }
   .container-grid .container-grid-item-titulo h4 {
     font-size: 35px; }
-  .sect-p div h2 {
-    margin-bottom: 5pc; }
   .areas div img {
     height: 180px;
     width: 235px;
@@ -701,14 +703,17 @@ footer {
       width: 280px;
       height: 340px;
       margin: 15px 40px; }
-  .nuestro-eq footer {
+  .quienes-somos {
+    height: 1380px; }
+  footer {
     width: auto; } }
 
-@media screen and (max-width: 430px) and (max-width: 370px) {
-  .sect-p {
-    display: none; }
-    .sect-p div h2 {
-      margin-bottom: 20px; }
+@media screen and (max-width: 376px) {
+  .sect-p div h2 {
+    font-size: 28px; }
+  .sect-p div h4 {
+    font-size: 20px;
+    margin: 5px; }
   .areas div img {
     height: 200px;
     width: 215px;

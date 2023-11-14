@@ -156,7 +156,8 @@
    .container-grid{
       .container-grid-item-titulo{
           h2{
-              font-size: 60px;}
+              font-size: 60px;
+            }
           h4{
               font-size: 44px;
           }
@@ -172,7 +173,7 @@
             justify-content: center;
         }
    }
-
+ 
     .nuestro-eq {  
       
         .nuestro-eq2{
@@ -215,11 +216,9 @@
 @media screen and (max-width:580px){
     .container-grid{
         width: 100%;
-        gap:12px;
-      
+        gap:12px; 
       } 
-      .nuestro-eq {  
-      
+    .nuestro-eq {  
         .nuestro-eq2{
             grid-template-columns: 1fr;
             margin: 50px 40px;
@@ -227,10 +226,21 @@
         }
 }
 @media screen and  (max-width:530px){
-
+    
+    .sect-p{
+        div{
+            h2{
+                margin: 10px;
+            }
+            h4{
+                margin :10px;
+            }
+        }
+    }
+    
     .container-grid{  
         width: 100%; 
-        margin: 10px auto;
+        margin: 20px auto;
         grid-template-columns:(100%);
         grid-template-rows:repeat(7, 140px);
         grid-template-areas:
@@ -241,7 +251,7 @@
             "icon4"
             "icon5" 
             "icon6";
-        gap: 130px;
+        gap: 120px;
         background-image: url("../img/grid.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -363,6 +373,7 @@
                 }
             }
         }
+
  
         .contenedor {
           flex-direction: column;
@@ -398,13 +409,7 @@
                
             }
           }
-    .sect-p{
-        div{
-            h2{
-                margin-bottom: 5pc;
-            }
-        }
-    }
+       
     .areas{
         div{
             img{
@@ -416,6 +421,7 @@
             }
         }
     }
+
   
     .nuestro-eq {  
       
@@ -452,19 +458,25 @@
                 }
            }
         }
+    }
+    .quienes-somos{
+        height: 1380px;
+    }
     footer{
         width: auto;
     }
-    
+
 }
 
-@media screen and (max-width:370px) {  
+@media screen and (max-width:376px) {
 
     .sect-p{
-        display: none;
         div{
             h2{
-                margin-bottom: 20px;
+                font-size: 28px;
+            }
+            h4{ font-size: 20px;
+                margin: 5px;
             }
         }
     }
@@ -479,9 +491,9 @@
             }
         }
     }
+
     footer{
         width: auto;
     }
     
-}
 }

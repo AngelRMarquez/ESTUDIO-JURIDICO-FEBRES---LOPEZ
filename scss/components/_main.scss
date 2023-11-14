@@ -95,12 +95,12 @@ body{
                     width: 100%;
                     height: $altura;
                     h2{
-                        margin: $margen-promedio + 20;
+                        margin: $margen-promedio ;
                         text-transform: uppercase;
                      
                     }
                     h4{
-                        margin: auto 30px 50px 30px;
+                        margin: 29px 10px;
                     }
                     a{
                       @extend %boton;
