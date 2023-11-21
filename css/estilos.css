@@ -70,7 +70,7 @@ body main .container1 .container-areas .boton, body main .sect-p div a, form fie
     justify-content: center;
     align-items: center;
     height: 80%;
-    width: 50%;
+    width: 40%;
     margin: 50px 50px;
     background-color: #bdb4a8;
     border-radius: 16px; }
@@ -191,6 +191,16 @@ body main .container1 .container-areas .boton, body main .sect-p div a, form fie
 .container-grid-item-icon6 {
   grid-area: icon6; }
 
+/*testimonio*/
+.testimonio-cars {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0; }
+  .testimonio-cars .fondo-t {
+    border-radius: 10%; }
+  .testimonio-cars .personas {
+    border-radius: 50%; }
+
 header {
   display: flex;
   justify-content: space-between;
@@ -287,6 +297,10 @@ body {
         width: 250px;
         height: 350px;
         margin-bottom: 35px; }
+      body main .container1 .container-areas .boton:hover {
+        background-color: #88764f;
+        border-radius: 10px;
+        color: #252525; }
   body main .sect-p {
     background-image: url(../img/contacto.jpg);
     text-align: center;
@@ -302,7 +316,11 @@ body {
         margin: 20px;
         text-transform: uppercase; }
       body main .sect-p div h4 {
-        margin: 29px 10px; }
+        margin: 29px 21px; }
+      body main .sect-p div a:hover {
+        background-color: #bdb4a8;
+        border-radius: 10px;
+        color: #252525; }
   body main .contenedor {
     display: flex; }
     body main .contenedor h2 {
@@ -345,10 +363,11 @@ body {
     .quienes-somos .quienes-somos-fd h2 {
       text-transform: uppercase;
       color: #fff;
-      margin: 40px; }
+      padding: 10px; }
     .quienes-somos .quienes-somos-fd p {
-      margin: auto 40px;
-      text-align: center; }
+      margin: 20px 40px;
+      text-align: center;
+      justify-content: center; }
 
 /*pagina de areas de practica*/
 .areas {
@@ -390,18 +409,28 @@ body {
 /* pagina contacto*/
 form {
   background-color: #bdb4a8;
-  min-width: 500px, 80%;
+  min-width: 500px, 100%;
   margin: 0 auto;
-  padding: 18px 37px;
+  padding: 6px 13px;
   border-radius: 16px;
   text-transform: capitalize; }
   form fieldset {
     border: none; }
+    form fieldset legend {
+      text-align: center;
+      font-size: 25px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      color: #252525; }
     form fieldset div {
       font-weight: bold;
       margin-bottom: 10px;
-      display: block;
+      flex-direction: row;
       text-align: center; }
+      form fieldset div label {
+        text-align: start; }
+        form fieldset div label span {
+          padding: 10px; }
 
 footer {
   background-color: #88764f;
@@ -554,7 +583,14 @@ footer {
       height: 340px;
       margin: 15px 40px; }
   .quienes-somos {
-    height: 1300px; } }
+    height: 1000px; }
+  .testimonio-cars .fondo-t {
+    border-radius: 10%;
+    height: 370px;
+    width: 500px; }
+  .testimonio-cars .personas {
+    width: 150px;
+    height: 150px; } }
 
 @media screen and (max-width: 580px) {
   .container-grid {
@@ -570,6 +606,9 @@ footer {
     margin: 10px; }
   .sect-p div h4 {
     margin: 10px; }
+  .testimonio-cars .fondo-t {
+    height: 450px;
+    width: 400px; }
   .container-grid {
     width: 100%;
     margin: 20px auto;
@@ -665,6 +704,8 @@ footer {
   .contenedor {
     flex-direction: column;
     align-items: center; }
+  form {
+    width: 400px; }
   footer {
     flex-wrap: wrap;
     align-items: center;
@@ -706,7 +747,12 @@ footer {
   .quienes-somos {
     height: 1380px; }
   footer {
-    width: auto; } }
+    width: auto; }
+  .testimonio-cars .fondo-t {
+    height: 450px;
+    width: 350px; }
+  form {
+    width: 350px; } }
 
 @media screen and (max-width: 376px) {
   .sect-p div h2 {

@@ -78,6 +78,11 @@ body{
                         }
                         .boton{
                             @extend %boton;
+                            &:hover{
+                                background-color:nth($colores , 7); 
+                                border-radius: 10px;
+                                color: #252525;
+                              }
                         }
                     }
                 }
@@ -100,10 +105,15 @@ body{
                      
                     }
                     h4{
-                        margin: 29px 10px;
+                        margin: 29px 21px;
                     }
                     a{
                       @extend %boton;
+                      &:hover{
+                        background-color:nth($colores , 4); 
+                        border-radius: 10px;
+                        color: #252525;
+                      }
                     }
                 }
             } 
@@ -148,6 +158,7 @@ body{
 
 /* pagina de quienes somos*/
     .quienes-somos{
+        
             color: #fff;
             text-align: center;
             width: 100%;
@@ -163,12 +174,13 @@ body{
                 h2{
                     text-transform: uppercase;
                     color: #fff;
-                    margin: $margen-promedio + 20;
+                  padding: 10px;
                 }
                 p{
-                    margin: auto 40px;
+                    margin: 20px 40px;
                     text-align: center;
-                };
+                    justify-content: center;
+                }
             }
         }    
 
@@ -220,19 +232,37 @@ body{
 /* pagina contacto*/
   form{
       background-color: nth($colores, 4);
-      min-width:(500px, 80%);
+      min-width:( 500px, 100%);
       margin: 0 auto;
-      padding: 18px 37px;
+      padding: 6px 13px;
       border-radius: 16px;
       text-transform: capitalize;
+   
       
     fieldset{
         border: none;
+        
+        legend{
+            text-align: center;
+            font-size:25px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color:#252525;
+            
+           
+        }
         div{
             font-weight: bold;
             margin-bottom: 10px;
-            display: block;
+            flex-direction: row;
             text-align: center;
+            label{
+                text-align: start;
+                span{
+                    padding: 10px;
+                }
+            }
+          
             .boton{
                 @extend %boton;
             }
