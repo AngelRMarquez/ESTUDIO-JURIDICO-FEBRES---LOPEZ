@@ -269,7 +269,7 @@
             "icon4"
             "icon5" 
             "icon6";
-        gap: 120px;
+        gap: 110px;
         background-image: url("../img/grid.jpg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -442,7 +442,16 @@
         }
     }
 
-  
+    .sect-p{
+        div{
+            h2{
+                font-size: 28px;
+            }
+            h4{ font-size: 20px;
+                margin: 3px;
+            }
+        }
+    }
     .nuestro-eq {  
       
         .nuestro-eq2{
