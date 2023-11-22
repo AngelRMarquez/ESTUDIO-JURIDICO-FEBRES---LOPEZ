@@ -216,7 +216,7 @@ header {
   .navegacion div img {
     width: 120px;
     margin-right: 300px;
-    border-radius: 6px; }
+    border-radius: 50%; }
   .navegacion div ul li a {
     text-decoration: none;
     color: #252525;
@@ -296,7 +296,8 @@ body {
       body main .container1 .container-areas img {
         width: 250px;
         height: 350px;
-        margin-bottom: 35px; }
+        margin-bottom: 35px;
+        object-fit: cover; }
       body main .container1 .container-areas .boton:hover {
         background-color: #88764f;
         border-radius: 10px;
@@ -428,6 +429,8 @@ form {
       flex-direction: row;
       text-align: center; }
       form fieldset div label {
+        display: inline-block;
+        vertical-align: top;
         text-align: start; }
         form fieldset div label span {
           padding: 10px; }
@@ -447,7 +450,7 @@ footer {
       width: 120px;
       height: auto;
       margin: 5px;
-      border-radius: 4px; }
+      border-radius: 50%; }
   footer div ul {
     list-style: none;
     display: flex;
@@ -700,7 +703,7 @@ footer {
   .areas div img {
     height: 200px;
     width: 300px;
-    margin: 0px 50px 50px 50px;
+    margin: 0px 50px 50px 60px;
     border-radius: 15%;
     float: left; }
   .contenedor {
@@ -723,7 +726,7 @@ footer {
   .areas div img {
     height: 180px;
     width: 235px;
-    margin: 0px 40px 50px 50px;
+    margin: 0px 40px 50px 60px;
     border-radius: 15%;
     float: left; }
   .sect-p div h2 {
@@ -770,7 +773,7 @@ footer {
   .areas div img {
     height: 200px;
     width: 215px;
-    margin: 0px 0px 26px 35px;
+    margin: 0px 0px 26px 42px;
     border-radius: 15%;
     float: left; }
   footer {

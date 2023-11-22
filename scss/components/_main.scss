@@ -75,6 +75,7 @@ body{
                             width: 250px;
                             height: 350px;
                             margin-bottom: 35px;
+                            object-fit:cover;
                         }
                         .boton{
                             @extend %boton;
@@ -257,6 +258,8 @@ body{
             flex-direction: row;
             text-align: center;
             label{
+                display: inline-block;
+                vertical-align: top;
                 text-align: start;
                 span{
                     padding: 10px;
