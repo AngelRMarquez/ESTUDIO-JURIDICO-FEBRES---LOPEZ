@@ -197,7 +197,7 @@ body{
         text-align: center;
         text-transform: $mayuscula;
         width: 100%;
-        margin: $margen-promedio + 10 ;
+        margin: $margen-promedio auto;
         box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
         -webkit-box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
         -moz-box-shadow: 0px 21px 17px 7px rgba(0,0,0,0.64);
@@ -257,6 +257,7 @@ body{
             margin-bottom: 10px;
             flex-direction: row;
             text-align: center;
+            justify-content: space-between;
             label{
                 display: inline-block;
                 vertical-align: top;

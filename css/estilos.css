@@ -382,7 +382,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     width: 100%;
-    margin: 30px;
+    margin: 20px auto;
     box-shadow: 0px 21px 17px 7px rgba(0, 0, 0, 0.64);
     -webkit-box-shadow: 0px 21px 17px 7px rgba(0, 0, 0, 0.64);
     -moz-box-shadow: 0px 21px 17px 7px rgba(0, 0, 0, 0.64); }
@@ -427,7 +427,8 @@ form {
       font-weight: bold;
       margin-bottom: 10px;
       flex-direction: row;
-      text-align: center; }
+      text-align: center;
+      justify-content: space-between; }
       form fieldset div label {
         display: inline-block;
         vertical-align: top;
