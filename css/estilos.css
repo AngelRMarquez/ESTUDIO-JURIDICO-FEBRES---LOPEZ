@@ -121,7 +121,8 @@ body main .container1 .container-areas .boton, body main .sect-p div a, form fie
   height: 440px;
   margin: 10px 45px;
   align-items: center;
-  border-radius: 20%; }
+  border-radius: 20%;
+  object-fit: fill; }
 
 .nuestro-eq2 p {
   margin: 15px;
@@ -427,8 +428,7 @@ form {
       font-weight: bold;
       margin-bottom: 10px;
       flex-direction: row;
-      text-align: center;
-      justify-content: space-between; }
+      text-align: center; }
       form fieldset div label {
         display: inline-block;
         vertical-align: top;
